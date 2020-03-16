@@ -7,11 +7,7 @@ function digitPressed(ev) {
    display.value += ev.target.innerText;
 
 }  
-document.querySelector('.reset').addEventListener('click', reset);
-     function reset() {
-         display.value = " ";         
 
-}
 document.querySelectorAll('.opers button')
    .forEach( button => button.addEventListener('click', digitPressed));
    
